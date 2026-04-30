@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA | Esencia de Lujo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <nav class="flex justify-between items-center px-8 py-6 border-b border-stone-200 bg-white">
+        <div class="text-2xl font-bold tracking-widest serif">AURA</div>
+        <ul class="hidden md:flex space-x-8 text-sm uppercase tracking-widest">
+            <li><a href="#" class="hover:text-stone-500 transition">Colecciones</a></li>
+            <li><a href="#" class="hover:text-stone-500 transition">Nuestra Historia</a></li>
+            <li><a href="#" class="hover:text-stone-500 transition">Contacto</a></li>
+        </ul>
+        <div class="flex space-x-4">
+            <span class="cursor-pointer">🔍</span>
+            <span class="cursor-pointer">🛒 (0)</span>
+        </div>
+    </nav>
+
+    <section class="relative h-[80vh] flex items-center justify-center bg-stone-200 overflow-hidden">
+        <div class="absolute inset-0 opacity-40">
+            <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&q=80&w=1500" alt="Perfume background" class="w-full h-full object-cover">
+        </div>
+        <div class="relative z-10 text-center px-4">
+            <span class="uppercase tracking-[0.3em] text-sm mb-4 block">Nueva Colección</span>
+            <h1 class="text-5xl md:text-7xl mb-6">El arte de lo invisible</h1>
+            <p class="text-lg md:text-xl max-w-xl mx-auto mb-8 font-light italic">
+                Descubre fragancias diseñadas para capturar momentos que las palabras no pueden explicar.
+            </p>
+            <a href="#productos" class="bg-stone-800 text-white px-10 py-4 uppercase text-xs tracking-widest hover:bg-stone-700 transition">
+                Explorar Esencias
+            </a>
+        </div>
+    </section>
+
+    <section id="productos" class="py-20 px-8 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl mb-4">Nuestros Best Sellers</h2>
+            <div class="w-16 h-px bg-stone-400 mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="group cursor-pointer">
+                <div class="bg-stone-100 aspect-[3/4] mb-4 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&q=80&w=600" alt="Perfume 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <h3 class="text-xl mb-1 italic">Nuit d'Or</h3>
+                <p class="text-stone-500 text-sm mb-2">Ámbar, Vainilla y Sándalo</p>
+                <p class="font-bold">$125.00</p>
+            </div>
+
+            <div class="group cursor-pointer">
+                <div class="bg-stone-100 aspect-[3/4] mb-4 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&q=80&w=600" alt="Perfume 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <h3 class="text-xl mb-1 italic">Fleur Blanche</h3>
+                <p class="text-stone-500 text-sm mb-2">Jazmín, Bergamota y Almizcle</p>
+                <p class="font-bold">$110.00</p>
+            </div>
+
+            <div class="group cursor-pointer">
+                <div class="bg-stone-100 aspect-[3/4] mb-4 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1583445013765-48c220463125?auto=format&fit=crop&q=80&w=600" alt="Perfume 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <h3 class="text-xl mb-1 italic">Océan Mist</h3>
+                <p class="text-stone-500 text-sm mb-2">Sal de Mar, Limón y Cedro</p>
+                <p class="font-bold">$95.00</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-stone-800 text-stone-200 py-24 px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-5xl mb-8 serif italic">"El perfume es la forma más intensa del recuerdo."</h2>
+            <p class="text-stone-400 leading-relaxed tracking-wide">
+                En AURA, creemos que cada fragancia es una firma personal. Seleccionamos ingredientes naturales de todo el mundo para crear mezclas que perduran en el tiempo y en la memoria.
+            </p>
+        </div>
+    </section>
+
+    <footer class="bg-white py-12 px-8 border-t border-stone-200">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="text-xl font-bold serif tracking-widest mb-4 md:mb-0">AURA</div>
+            <div class="text-xs uppercase tracking-widest text-stone-500">
+                © 2026 AURA Parfums. Hecho con elegancia.
+            </div>
+            <div class="flex
